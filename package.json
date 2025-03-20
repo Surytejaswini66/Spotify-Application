@@ -4,11 +4,14 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-  "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
-  "start": "npm start --prefix backend",
-  "postinstall": "npm run build --prefix frontend"
-},
+		"build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+		"start": "npm start --prefix backend",
+		"postinstall": "npm run build --prefix frontend"
+	},
 	"keywords": [],
 	"author": "",
-	"license": "ISC"
+	"license": "ISC",
+	"devDependencies": {
+		"typescript": "^5.8.2"
+	}
 }
