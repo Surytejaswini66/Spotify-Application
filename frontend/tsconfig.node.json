@@ -2,7 +2,7 @@
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
     "target": "ES2022",
-    "lib": ["ES2023"],
+    "lib": ["ES2022", "DOM"], // ✅ Adjusted for better compatibility
     "module": "ESNext",
     "skipLibCheck": true,
 
@@ -11,7 +11,8 @@
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    "noEmit": false,  // ✅ Changed to allow emitting files
+    "composite": true, // ✅ Added to fix dependency errors
 
     /* Linting */
     "strict": true,
