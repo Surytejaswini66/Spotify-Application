@@ -14,9 +14,10 @@
 		/* Bundler mode */
 		"moduleResolution": "Bundler",
 		"allowImportingTsExtensions": true,
+		"noEmit": true , // Add this line
 		"isolatedModules": true,
 		"moduleDetection": "force",
-		"noEmit": false,  // ✅ Changed to allow emitting files
+		 // ✅ Changed to allow emitting files
 		"composite": true, // ✅ Added to fix dependency errors
 		"jsx": "react-jsx",
 
